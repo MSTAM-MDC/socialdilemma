@@ -44,3 +44,11 @@ if model_choice == 'Logistic Regression':
         probabilities = logistic_model.predict_proba([user_input])[0]
         st.write(f"Probability of Negative: {probabilities[0]*100:.2f}%")
         st.write(f"Probability of Positive: {probabilities[1]*100:.2f}%")
+
+tab1, tab2 = st.tabs(["Dataset", "Functionality"])
+tab1.write("The dataset comprises tweets that utilized the hashtag #TheSocialDilemma, reflecting a range of public opinions about the documentary. These tweets have been collected to provide insights into viewers' reactions, ranging from positive to negative sentiments. The dataset was specifically chosen to ensure a balanced perspective by including an equal number of positive and negative responses, which helps in training our models more effectively.")
+tab2.write("""The tool processes user-inputted text (simulating tweet content) and predicts the sentiment as either "Positive" or "Negative." Users can choose between two machine learning models for the sentiment prediction:
+
+**Logistic Regression:** Offers fast and interpretable results, ideal for linearly separable data.
+**Support Vector Machine (SVM):** Utilizes a kernel trick to handle non-linear data, providing robust predictions even in complex scenarios.
+""")
