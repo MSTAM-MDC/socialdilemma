@@ -50,5 +50,6 @@ tab1.write("The dataset comprises tweets that utilized the hashtag #TheSocialDil
 tab2.write("""The tool processes user-inputted text (simulating tweet content) and predicts the sentiment as either "Positive" or "Negative." Users can choose between two machine learning models for the sentiment prediction:
 
 **Logistic Regression:** Offers fast and interpretable results, ideal for linearly separable data.
+
 **Support Vector Machine (SVM):** Utilizes a kernel trick to handle non-linear data, providing robust predictions even in complex scenarios.
 """)
